@@ -739,7 +739,7 @@ public class CaptureHelperDeviceManager : CaptureHelperDevice {
 /// 2- push a View Controller delegate reference that is compliant to a CaptureHelperDelegate protocol
 /// 3- fill a SKTAppInfo with developer ID, bundle ID and AppKey coming from Socket Mobile developer portal
 /// 4- open Capture with the SKTAppInfo instance
-@objc
+@objcMembers
 public class CaptureHelper : NSObject, SKTCaptureDelegate {
     private var capture : SKTCapture?
     private var openCount = 0;
